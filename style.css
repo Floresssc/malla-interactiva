@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 30px;
+}
+
+.malla {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.semestre {
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 280px;
+}
+
+.semestre h2 {
+  text-align: center;
+  color: #00529B;
+  margin-bottom: 10px;
+}
+
+.ramo {
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+  color: #fff;
+}
+
+/* Colores según tipo */
+.ramo.general {
+  background-color: #f39c12; /* Amarillo anaranjado */
+}
+
+.ramo.disciplinaria {
+  background-color: #2980b9; /* Azul */
+}
+
+.ramo.sello {
+  background-color: #27ae60; /* Verde */
+}
+
+.ramo.optativa {
+  background-color: #8e44ad; /* Morado */
+}
+
+.ramo.bloqueado {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.ramo.aprobado {
+  background-color: #2ecc71 !important;
+  text-decoration: line-through;
+}
+
+.promedio-box {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
